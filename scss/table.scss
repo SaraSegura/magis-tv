@@ -1,0 +1,122 @@
+@import "variables.scss";
+
+header {
+  nav {
+    padding-left: 20%;
+    .list-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+    }
+    img {
+      margin-right: 5%;
+    }
+  }
+}
+
+.slider-container-section-one {
+  .slider {
+    .slider-container {
+      .slider-item {
+        img {
+          display: block;
+          height: 400px;
+        }
+        &.active {
+          height: auto;
+          img {
+            width: 650px;
+            height: 450px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.download-container {
+  .info-download {
+    p {
+      margin: 2% 10% 5% 10%;
+    }
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 60px;
+
+    .card-download {
+      .cards {
+        padding: 20px 12px;
+        .icon-movil {
+          width: 70px;
+          height: 80px;
+        }
+        .icon-tv {
+          width: 90px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+.price-container {
+  .info-price {
+    p {
+      font-size: 2rem;
+      margin: 2% 10% 5% 10%;
+    }
+  }
+  .cards-price {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+footer {
+  a {
+    img {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+  .section-footer-one {
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+
+    gap: 70px;
+
+    .info-footer {
+      a {
+        img {
+          display: none;
+        }
+      }
+    }
+    .services {
+      h3 {
+        text-align: left;
+      }
+      ul {
+        li {
+          text-align: left;
+        }
+      }
+    }
+    .magistv-Global {
+      @extend .services;
+      .list-countries {
+        justify-content: space-between;
+      }
+    }
+    .works-content {
+      @extend .services;
+    }
+  }
+}

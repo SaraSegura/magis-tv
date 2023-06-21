@@ -1,0 +1,28 @@
+footer {
+  a {
+    .logo {
+      display: none;
+    }
+  }
+  .section-footer-one {
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    .info-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        img {
+          display: block;
+          margin-top: -25px;
+        }
+      }
+      p {
+        display: block;
+        margin-top: 0px;
+      }
+    }
+  }
+}

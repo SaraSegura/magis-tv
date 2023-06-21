@@ -1,0 +1,130 @@
+@import "variables.scss";
+
+header {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .list-nav {
+      display: none;
+    }
+  }
+}
+.slider-container-section-one {
+  .slider {
+    .slider-container {
+      .slider-item {
+        img {
+          display: none;
+        }
+        &.active {
+          height: auto;
+          img {
+            display: grid;
+            width: 100%;
+            height: 200px;
+          }
+        }
+      }
+    }
+    .slider-controls {
+      justify-content: space-between;
+      margin-top: 10px;
+      .prev-btn {
+        background: rgba(0, 0, 0, 0.644);
+        &:hover {
+          transform: none;
+        }
+      }
+      .next-btn {
+        @extend .prev-btn;
+      }
+    }
+  }
+}
+.download-container {
+  .info-download {
+    h1 {
+      margin: 0% 1% 0% 1%;
+      font-size: 2.8rem;
+    }
+    p {
+      margin: 2% 7% 13% 7%;
+      font-size: 1.6rem;
+    }
+  }
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+    .card-download {
+      margin: 0 0 30px 0;
+    }
+  }
+}
+.price-container {
+  .info-price {
+    text-align: center;
+    h1 {
+      margin: 0% 1% 0% 1%;
+      font-size: 2.8rem;
+    }
+    p {
+      margin: 2% 7% 13% 7%;
+      font-size: 1.6rem;
+    }
+  }
+  .cards-price {
+    flex-direction: column;
+    gap: 20px;
+    .price {
+      margin: 0;
+    }
+  }
+}
+footer {
+  a {
+    .logo {
+      display: none;
+    }
+  }
+  .section-footer-one {
+    flex-direction: column;
+    gap: 0;
+    .info-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        display: none;
+      }
+      a {
+        img {
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .services {
+      margin-bottom: 20px;
+      h3 {
+        text-align: center;
+      }
+      ul {
+        li {
+          text-align: center;
+        }
+      }
+    }
+    .magistv-Global {
+      @extend .services;
+      .list-countries {
+        justify-content: space-evenly;
+        gap: 0;
+        margin-top: 0;
+      }
+    }
+    .works-content {
+      @extend .services;
+    }
+  }
+}

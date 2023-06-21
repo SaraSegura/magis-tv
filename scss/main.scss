@@ -1,0 +1,404 @@
+@import "variables.scss";
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px 7px 30px;
+  margin-bottom: 10px;
+  height: auto;
+  background: rgb(0, 0, 0);
+
+  img {
+    width: 100px;
+    height: 40px;
+  }
+  .list-nav {
+    display: flex;
+    margin-right: 28%;
+    gap: 40px;
+
+    div {
+      height: auto;
+      margin: 15px 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: $secundary-color;
+      padding: 10px 20px;
+      &:hover {
+        transform: scale(1.1);
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  .slider-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-gap: 5px;
+    grid-template-areas: "slider1 slider2 slider3 ";
+
+    .slider-item {
+      img {
+        width: 100%;
+        height: 350px;
+        border-radius: 5px;
+        opacity: 0.7;
+        object-fit: cover;
+      }
+
+      &.active {
+        grid-area: slider2;
+        border-radius: 10px;
+        z-index: 1;
+        height: 400px;
+        img {
+          opacity: 1;
+          width: 700px;
+          height: 100%;
+          border-radius: 5px;
+          object-fit: fill;
+        }
+      }
+    }
+  }
+
+  .slider-controls {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .prev-btn {
+      z-index: 2;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10%;
+      background: linear-gradient(
+        rgb(0, 0, 0),
+        rgb(10, 10, 10),
+        rgb(20, 20, 20),
+        rgb(30, 30, 30),
+        rgb(40, 40, 40),
+        rgb(50, 50, 50),
+        rgb(60, 60, 60)
+      );
+      border-radius: 50px;
+      border: none;
+      padding-left: 12px;
+
+      svg {
+        fill: $secundary-color;
+        width: 80px;
+        height: 80px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+
+    .next-btn {
+      @extend .prev-btn;
+      padding-left: 0;
+      padding-right: 10px;
+    }
+  }
+}
+
+.download-container {
+  height: auto;
+  margin-top: 10px;
+  background: linear-gradient(
+    rgb(0, 0, 0),
+    rgb(10, 10, 10),
+    rgb(20, 20, 20),
+    rgb(30, 30, 30)
+  );
+  padding: 30px 0;
+  margin-bottom: 10px;
+  .info-download {
+    text-align: center;
+    h1 {
+      font-size: $font-size-h1;
+      margin-top: 0;
+      margin-bottom: 2.5px;
+      color: $text-color;
+    }
+    p {
+      font-size: 2rem;
+      margin-top: 0px;
+      color: $secundary-color;
+      margin-bottom: 40px;
+    }
+  }
+  .card-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card-download {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-left: 60px;
+
+      button {
+        color: $text-color;
+        background: linear-gradient(rgb(255, 102, 0), rgb(255, 204, 0));
+        border: none;
+        padding: 7px 20px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        img {
+          width: 10px;
+          height: 10px;
+          margin-right: 5px;
+        }
+      }
+
+      .cards {
+        box-shadow: 0 0 10px rgb(255, 204, 0);
+        margin-bottom: 30px;
+        padding: 30px 20px;
+        border-radius: 20px;
+
+        h2 {
+          font-size: 2.5rem;
+          color: $secundary-color;
+        }
+        p {
+          font-size: $font-size-p;
+          color: $text-color;
+          margin-bottom: 40px;
+        }
+        .icon-movil {
+          width: 80px;
+          height: 90px;
+        }
+
+        .icon-tv {
+          width: 100px;
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+
+.price-container {
+  height: auto;
+  margin-top: 20px;
+  .info-price {
+    text-align: center;
+    h1 {
+      font-size: $font-size-h1;
+      margin-top: 30px;
+      margin-bottom: 2.5px;
+      color: $secundary-color;
+    }
+    p {
+      font-size: 1.6rem;
+      margin-top: 0px;
+      color: $tertiary-color;
+      margin-bottom: 40px;
+    }
+  }
+  .cards-price {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .price {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 60px;
+      padding: 10px 50px;
+      box-shadow: 0 0 10px rgb(0, 0, 0);
+      border-radius: 20px;
+      background: linear-gradient(
+        rgb(20, 20, 20),
+        rgb(30, 30, 30),
+        rgb(40, 40, 40),
+        rgb(50, 50, 50),
+        rgb(60, 60, 60),
+        rgb(70, 70, 70)
+      );
+      h2 {
+        font-size: 2.5rem;
+        color: $text-color;
+        margin-bottom: 0px;
+        font-weight: 500;
+      }
+      .p {
+        font-weight: bold;
+        font-size: $font-size-p;
+        margin-top: 0px;
+        color: $text-color;
+        font-weight: 400;
+      }
+      .n-price {
+        font-size: 5rem;
+        color: $secundary-color;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding: 0px;
+        font-weight: 500;
+      }
+      .info-trans {
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-top: 0px;
+        color: $secundary-color;
+        font-weight: 400;
+      }
+      ul {
+        padding: 0;
+
+        li {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          list-style: none;
+          margin-bottom: 15px;
+          color: $text-color;
+
+          font-size: 1rem;
+          img {
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+          }
+        }
+      }
+      button {
+        color: $text-color;
+        background: linear-gradient(rgb(255, 102, 0), rgb(255, 204, 0));
+        border: none;
+        padding: 7px 30px;
+        border-radius: 20px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 20px;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $tertiary-color;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  .section-footer-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    .info-footer {
+      p {
+        height: 100%;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: $text-color;
+      }
+    }
+    .services {
+      height: 100%;
+      h3 {
+        color: $text-color;
+        text-align: left;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin: 0;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          color: $text-color;
+          text-align: left;
+          font-size: 1rem;
+          margin-bottom: 5px;
+          &:hover {
+            color: $secundary-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .magistv-Global {
+      @extend .services;
+      .list-countries {
+        display: flex;
+        gap: 60px;
+      }
+    }
+    .works-content {
+      @extend .services;
+    }
+  }
+  .section-footer-two {
+    .content-privacy {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      border-top: 1px solid white;
+      margin-bottom: 40px;
+      padding: 20px;
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}

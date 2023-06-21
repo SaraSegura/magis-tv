@@ -1,0 +1,79 @@
+header nav {
+  padding-left: 20%;
+}
+header nav .list-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+header nav img {
+  margin-right: 5%;
+}
+
+.slider-container-section-one .slider .slider-container .slider-item img {
+  display: block;
+  height: 400px;
+}
+.slider-container-section-one .slider .slider-container .slider-item.active {
+  height: auto;
+}
+.slider-container-section-one .slider .slider-container .slider-item.active img {
+  width: 650px;
+  height: 450px;
+}
+
+.download-container .info-download p {
+  margin: 2% 10% 5% 10%;
+}
+.download-container .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 60px;
+}
+.download-container .card-container .card-download .cards {
+  padding: 20px 12px;
+}
+.download-container .card-container .card-download .cards .icon-movil {
+  width: 70px;
+  height: 80px;
+}
+.download-container .card-container .card-download .cards .icon-tv {
+  width: 90px;
+  height: 80px;
+}
+
+.price-container .info-price p {
+  font-size: 2rem;
+  margin: 2% 10% 5% 10%;
+}
+.price-container .cards-price {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+}
+
+footer a img {
+  display: block;
+  margin-top: 20px;
+}
+footer .section-footer-one {
+  display: flex;
+  flex-direction: row;
+  margin-right: 60px;
+  gap: 70px;
+}
+footer .section-footer-one .info-footer a img {
+  display: none;
+}
+footer .section-footer-one .services h3, footer .section-footer-one .works-content h3, footer .section-footer-one .magistv-Global h3 {
+  text-align: left;
+}
+footer .section-footer-one .services ul li, footer .section-footer-one .works-content ul li, footer .section-footer-one .magistv-Global ul li {
+  text-align: left;
+}
+footer .section-footer-one .magistv-Global .list-countries {
+  justify-content: space-between;
+}/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,98 @@
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .list-nav {
+  display: none;
+}
+
+.slider-container-section-one .slider .slider-container .slider-item img {
+  display: none;
+}
+.slider-container-section-one .slider .slider-container .slider-item.active {
+  height: auto;
+}
+.slider-container-section-one .slider .slider-container .slider-item.active img {
+  display: grid;
+  width: 100%;
+  height: 200px;
+}
+.slider-container-section-one .slider .slider-controls {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.slider-container-section-one .slider .slider-controls .prev-btn, .slider-container-section-one .slider .slider-controls .next-btn {
+  background: rgba(0, 0, 0, 0.644);
+}
+.slider-container-section-one .slider .slider-controls .prev-btn:hover, .slider-container-section-one .slider .slider-controls .next-btn:hover {
+  transform: none;
+}
+.download-container .info-download h1 {
+  margin: 0% 1% 0% 1%;
+  font-size: 2.8rem;
+}
+.download-container .info-download p {
+  margin: 2% 7% 13% 7%;
+  font-size: 1.6rem;
+}
+.download-container .card-container {
+  flex-direction: column;
+  gap: 20px;
+}
+.download-container .card-container .card-download {
+  margin: 0 0 30px 0;
+}
+
+.price-container .info-price {
+  text-align: center;
+}
+.price-container .info-price h1 {
+  margin: 0% 1% 0% 1%;
+  font-size: 2.8rem;
+}
+.price-container .info-price p {
+  margin: 2% 7% 13% 7%;
+  font-size: 1.6rem;
+}
+.price-container .cards-price {
+  flex-direction: column;
+  gap: 20px;
+}
+.price-container .cards-price .price {
+  margin: 0;
+}
+
+footer a .logo {
+  display: none;
+}
+footer .section-footer-one {
+  flex-direction: column;
+  gap: 0;
+}
+footer .section-footer-one .info-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .section-footer-one .info-footer p {
+  display: none;
+}
+footer .section-footer-one .info-footer a img {
+  display: block;
+  margin-bottom: 20px;
+}
+footer .section-footer-one .services, footer .section-footer-one .works-content, footer .section-footer-one .magistv-Global {
+  margin-bottom: 20px;
+}
+footer .section-footer-one .services h3, footer .section-footer-one .works-content h3, footer .section-footer-one .magistv-Global h3 {
+  text-align: center;
+}
+footer .section-footer-one .services ul li, footer .section-footer-one .works-content ul li, footer .section-footer-one .magistv-Global ul li {
+  text-align: center;
+}
+footer .section-footer-one .magistv-Global .list-countries {
+  justify-content: space-evenly;
+  gap: 0;
+  margin-top: 0;
+}/*# sourceMappingURL=mobile.css.map */

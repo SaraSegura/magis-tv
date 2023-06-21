@@ -1,0 +1,22 @@
+footer a .logo {
+  display: none;
+}
+footer .section-footer-one {
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+footer .section-footer-one .info-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .section-footer-one .info-footer a img {
+  display: block;
+  margin-top: -25px;
+}
+footer .section-footer-one .info-footer p {
+  display: block;
+  margin-top: 0px;
+}/*# sourceMappingURL=laptop.css.map */

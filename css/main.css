@@ -1,0 +1,351 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px 7px 30px;
+  margin-bottom: 10px;
+  height: auto;
+  background: rgb(0, 0, 0);
+}
+nav img {
+  width: 100px;
+  height: 40px;
+}
+nav .list-nav {
+  display: flex;
+  margin-right: 28%;
+  gap: 40px;
+}
+nav .list-nav div {
+  height: auto;
+  margin: 15px 0;
+}
+nav .list-nav a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #ff5d0b;
+  padding: 10px 20px;
+}
+nav .list-nav a:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.slider .slider-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-gap: 5px;
+  grid-template-areas: "slider1 slider2 slider3 ";
+}
+.slider .slider-container .slider-item img {
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  opacity: 0.7;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider .slider-container .slider-item.active {
+  grid-area: slider2;
+  border-radius: 10px;
+  z-index: 1;
+  height: 400px;
+}
+.slider .slider-container .slider-item.active img {
+  opacity: 1;
+  width: 700px;
+  height: 100%;
+  border-radius: 5px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.slider .slider-controls {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider .slider-controls .prev-btn, .slider .slider-controls .next-btn {
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
+  background: linear-gradient(rgb(0, 0, 0), rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30), rgb(40, 40, 40), rgb(50, 50, 50), rgb(60, 60, 60));
+  border-radius: 50px;
+  border: none;
+  padding-left: 12px;
+}
+.slider .slider-controls .prev-btn svg, .slider .slider-controls .next-btn svg {
+  fill: #ff5d0b;
+  width: 80px;
+  height: 80px;
+}
+.slider .slider-controls .prev-btn:hover, .slider .slider-controls .next-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.slider .slider-controls .next-btn {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.download-container {
+  height: auto;
+  margin-top: 10px;
+  background: linear-gradient(rgb(0, 0, 0), rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30));
+  padding: 30px 0;
+  margin-bottom: 10px;
+}
+.download-container .info-download {
+  text-align: center;
+}
+.download-container .info-download h1 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 2.5px;
+  color: #ffffff;
+}
+.download-container .info-download p {
+  font-size: 2rem;
+  margin-top: 0px;
+  color: #ff5d0b;
+  margin-bottom: 40px;
+}
+.download-container .card-container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download-container .card-container .card-download {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 60px;
+}
+.download-container .card-container .card-download button {
+  color: #ffffff;
+  background: linear-gradient(rgb(255, 102, 0), rgb(255, 204, 0));
+  border: none;
+  padding: 7px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.download-container .card-container .card-download button:hover {
+  transform: scale(1.1);
+}
+.download-container .card-container .card-download button img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.download-container .card-container .card-download .cards {
+  box-shadow: 0 0 10px rgb(255, 204, 0);
+  margin-bottom: 30px;
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+.download-container .card-container .card-download .cards h2 {
+  font-size: 2.5rem;
+  color: #ff5d0b;
+}
+.download-container .card-container .card-download .cards p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.download-container .card-container .card-download .cards .icon-movil {
+  width: 80px;
+  height: 90px;
+}
+.download-container .card-container .card-download .cards .icon-tv {
+  width: 100px;
+  height: 90px;
+}
+
+.price-container {
+  height: auto;
+  margin-top: 20px;
+}
+.price-container .info-price {
+  text-align: center;
+}
+.price-container .info-price h1 {
+  font-size: 3.5rem;
+  margin-top: 30px;
+  margin-bottom: 2.5px;
+  color: #ff5d0b;
+}
+.price-container .info-price p {
+  font-size: 1.6rem;
+  margin-top: 0px;
+  color: black;
+  margin-bottom: 40px;
+}
+.price-container .cards-price {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-container .cards-price .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  padding: 10px 50px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 20px;
+  background: linear-gradient(rgb(20, 20, 20), rgb(30, 30, 30), rgb(40, 40, 40), rgb(50, 50, 50), rgb(60, 60, 60), rgb(70, 70, 70));
+}
+.price-container .cards-price .price h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.price-container .cards-price .price .p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.price-container .cards-price .price .n-price {
+  font-size: 5rem;
+  color: #ff5d0b;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+  font-weight: 500;
+}
+.price-container .cards-price .price .info-trans {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0px;
+  color: #ff5d0b;
+  font-weight: 400;
+}
+.price-container .cards-price .price ul {
+  padding: 0;
+}
+.price-container .cards-price .price ul li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 15px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.price-container .cards-price .price ul li img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.price-container .cards-price .price button {
+  color: #ffffff;
+  background: linear-gradient(rgb(255, 102, 0), rgb(255, 204, 0));
+  border: none;
+  padding: 7px 30px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.price-container .cards-price .price button:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: black;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+footer .section-footer-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+footer .section-footer-one .info-footer p {
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+footer .section-footer-one .services, footer .section-footer-one .works-content, footer .section-footer-one .magistv-Global {
+  height: 100%;
+}
+footer .section-footer-one .services h3, footer .section-footer-one .works-content h3, footer .section-footer-one .magistv-Global h3 {
+  color: #ffffff;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+footer .section-footer-one .services ul, footer .section-footer-one .works-content ul, footer .section-footer-one .magistv-Global ul {
+  padding: 0;
+}
+footer .section-footer-one .services ul li, footer .section-footer-one .works-content ul li, footer .section-footer-one .magistv-Global ul li {
+  list-style: none;
+  color: #ffffff;
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+footer .section-footer-one .services ul li:hover, footer .section-footer-one .works-content ul li:hover, footer .section-footer-one .magistv-Global ul li:hover {
+  color: #ff5d0b;
+  cursor: pointer;
+}
+footer .section-footer-one .magistv-Global .list-countries {
+  display: flex;
+  gap: 60px;
+}
+footer .section-footer-two .content-privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid white;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+footer .section-footer-two .content-privacy a img {
+  width: 40px;
+  height: 40px;
+}
+footer .section-footer-two .content-privacy a img:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=main.css.map */
