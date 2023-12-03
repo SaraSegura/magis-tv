@@ -4,6 +4,9 @@
 
 ## Contenido
 
-1. [Estructura del Proyecto](#estructura-del-proyecto)
-2. [Slider con JavaScript](#slider-con-javascript)
-3. [Estilos con SASS](#estilos-con-sass)
+1. HTML:Estructura del proyecto.
+2. JavaScript: La funcionalidad principal de la página, el slider, se implementó utilizando JavaScript para proporcionar una experiencia interactiva. 
+3. Estilos con SASS: Los estilos de la página se gestionan mediante SASS, un preprocesador de CSS que facilita la organización y mantenimiento del código.
+   
+## Autor
+Sara Paola Segura Devia - Front-end Developer.
